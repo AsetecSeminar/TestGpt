@@ -3,8 +3,8 @@ import json
 
 def chat(messages):
     r = requests.post(
-#        "http://localhost:11434/api/generate",
-        "https://5453-115-94-132-50.ngrok-free.app/api/generate",
+#       "http://localhost:11434/api/generate",
+        "http://localhost:11434/api/generate/api/generate",
         json={
             "model": "llama2:latest", 
             "prompt": messages[-1]["content"],  # 마지막 메시지의 내용만 전송
