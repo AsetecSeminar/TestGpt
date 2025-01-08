@@ -3,7 +3,7 @@ import json
 
 def chat(messages):
     r = requests.post(
-        "https://5453-115-94-132-50.ngrok-free.app/api/generate",  # 추후 변경됨
+        "http://localhost:11434/api/generate",  # 추후 변경됨
         json={
             "model": "gemma:7b",
             "prompt": messages[-1]["content"],
