@@ -3,7 +3,7 @@ import json
 
 def chat(messages):
     r = requests.post(
-#        "http://localhost:11434/api/generate", #test2
+#        "http://localhost:11434/api/generate",
         "https://5453-115-94-132-50.ngrok-free.app/api/generate",
         json={
             "model": "llama2:latest", 
